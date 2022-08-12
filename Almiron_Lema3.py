@@ -34,7 +34,7 @@ boton4 = tkinter.Button(f1, text = "Imposible", width = 10, height = 5, command=
 
 
 #etiqueta.pack(fill = tkinter.BOTH, expand = True)
-etiqueta = tkinter.Label(f2, text = "Ingrese su nombre", bg = "light blue")
+etiqueta = tkinter.Label(f2, text = "Ingrese un nombre de usuario", bg = "light blue")
 nombre = tkinter.Entry(f2, text = "Nombre de usuario", bg = "white")
 empezar = tkinter.Button(f3, text = "Presione Para Iniciar", bg = "light blue", command=finalizar)
 
