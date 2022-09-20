@@ -27,16 +27,16 @@ f1.grid(column=0, row=0)
 f2.grid(column=0, row=1)
 f3.grid(column=0, row=2)
 
-boton1 = tkinter.Button(f1, text = "Facil", width = 10, height = 5, command=partial(elegir_dificultad, 0), bg="green")
-boton2 = tkinter.Button(f1, text = "Medio", width = 10, height = 5, command=partial(elegir_dificultad, 1), bg="yellow")
-boton3 = tkinter.Button(f1, text = "Dificil", width = 10, height = 5, command=partial(elegir_dificultad, 2), bg="orange")
-boton4 = tkinter.Button(f1, text = "Imposible", width = 10, height = 5, command=partial(elegir_dificultad, 3), bg="red")
+boton1 = tkinter.Button(f1, text = "Facil", width = 10, height = 5, command=partial(elegir_dificultad, 0), bg="lawn green")
+boton2 = tkinter.Button(f1, text = "Medio", width = 10, height = 5, command=partial(elegir_dificultad, 1), bg="yellow2")
+boton3 = tkinter.Button(f1, text = "Dificil", width = 10, height = 5, command=partial(elegir_dificultad, 2), bg="darkgoldenrod1")
+boton4 = tkinter.Button(f1, text = "Imposible", width = 10, height = 5, command=partial(elegir_dificultad, 3), bg="orangered2")
 
 
 #etiqueta.pack(fill = tkinter.BOTH, expand = True)
-etiqueta = tkinter.Label(f2, text = "Ingrese un nombre de usuario", bg = "light blue")
-nombre = tkinter.Entry(f2, text = "Nombre de usuario", bg = "white")
-empezar = tkinter.Button(f3, text = "Presione Para Iniciar", bg = "light blue", command=finalizar)
+etiqueta = tkinter.Label(f2, text = "Ingrese un nombre de usuario", bg = "cornflower blue")
+nombre = tkinter.Entry(f2, text = "Nombre de usuario", bg = "gray80")
+empezar = tkinter.Button(f3, text = "Presione Para Iniciar", bg = "cornflower blue", command=finalizar)
 
 
 etiqueta.grid(row =0, column = 0)
@@ -47,7 +47,5 @@ boton1.grid(row = 1, column = 0)
 boton2.grid(row = 1, column = 1)
 boton3.grid(row = 1, column = 2)
 boton4.grid(row = 1, column = 3)
-
-
 
 ventana.mainloop()
