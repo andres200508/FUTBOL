@@ -1,6 +1,6 @@
 import tkinter
 from functools import partial
-from ventana_juego import inicio
+from ventana_juego import VentanaJuego
 #boton.config(relief=tkinter.RAISED)
 #boton.config(relief=tkinter.SUNKEN)
 
@@ -8,7 +8,6 @@ from ventana_juego import inicio
 ventana = tkinter.Tk()
 ventana.resizable(width=0, height=0)
 ventana.title("Test De Equipos del Futbol Argentino")
-
 
 def elegir_dificultad(boton):
     botones = [boton1, boton2, boton3, boton4]
@@ -18,7 +17,7 @@ def elegir_dificultad(boton):
 
 def finalizar():
     ventana.destroy()
-    inicio()
+    vj=VentanaJuego()
 
 f1 = tkinter.Frame(ventana)
 f2 = tkinter.Frame(ventana)
@@ -48,4 +47,4 @@ boton2.grid(row = 1, column = 1)
 boton3.grid(row = 1, column = 2)
 boton4.grid(row = 1, column = 3)
 
-ventana.mainloop()
+ventana.mainloop()    
